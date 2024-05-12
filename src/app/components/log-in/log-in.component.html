@@ -1,0 +1,47 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billgrean</title>
+  <link rel="stylesheet" href="log-in.component.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="split left">
+      <div class="centered-left">
+          <h3 id="bienvenida">WELCOME TO</h3>
+          <h1 id="titulo">BILLE GREAN</h1>
+          <img src="assets\Logo.png" alt="Company logo or image">
+      </div>
+  </div>
+
+  <div class="split right">
+      <div class="centered">
+          <h2 id="log-in">LOG IN</h2>
+          <section class="login">
+
+            <div class="data-container">
+
+            <div class="email-container">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="password-container">
+            
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+              
+          </div>
+          
+              <a routerLink="/forgot-password" id="forgot-button">Forgot your password?</a>
+              <div class="buttons">
+                <a routerLink="/home" id="login-button" alt="Login button"></a>
+                  <p>Don't have an account? <a routerLink="/" id="register-button">create</a></p>
+              </div>
+          </section>
+      </div>
+  </div>
+</body>
