@@ -1,0 +1,137 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    text-align: center;
+    left: 0;
+    background-color: #F3FAF4; /* Color claro ajustable */
+    padding-top: 20px; /* Ajustado para reducir espacio superior */
+}
+
+.right {
+    text-align: center;
+    right: 0;
+    background-color: #C8EAD0; /* Color verde ajustable */
+    padding-top: 20px; /* Reducido para mover LOG IN hacia arriba */
+}
+
+.centered {
+    text-align: center;
+    position: absolute;
+    top: 10%; /* Ajuste este valor para mover hacia arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #22452C;
+}
+
+h1 {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    padding-top: 400px; /* Eliminado el padding superior */
+}
+
+h3 {
+    font-size: 30px;
+    color: #000000;
+    padding-top: 100px;
+}
+
+.data-container {
+    padding-top: 20px; /* Adjust the value for desired vertical spacing */
+  }
+
+input[type="email"]  {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-container {
+    padding-bottom: -30px; /* Adjust the value for desired vertical spacing */
+  }
+
+input[type="password"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+label[for="password"] {
+    margin-left: -32px; /* Adjust the value for desired spacing */
+    margin-top: 10px;
+    
+  }
+
+  .password-container {
+    padding-top: 40px; /* Adjust the value for desired vertical spacing */
+  }
+  
+  
+  
+
+.buttons a {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.buttons a:hover {
+    background-color: #ccc;
+}
+
+.centered-left img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    padding-top: 50px;
+}
+
+#login-button {
+    display: inline-block;
+    background-image: url('/assets/LogButton.png');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 10px;
+    background-position: top center; /* Set background-position to top center */
+  }
+  
+  
