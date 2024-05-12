@@ -39,47 +39,48 @@ body, html {
     width: 100%;
 }
 
-h1, h2, h3{
+
+h1 {
+    font-size: 50px;
+    padding-top: 60px;
     margin: 0;
     font-family: "Roboto", sans-serif;
     color: #22452C;
 }
 
-h1 {
-    font-size: 50px;
-    padding-top: 60px;
-}
-
 h2 {
     font-size: 50px;
     padding-top: 500px; /* Eliminado el padding superior */
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #22452C;
 }
 
 h3 {
     font-size: 50px;
     padding-top: 10px; /* Eliminado el padding superior */
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #22452C;
 }
 
 
 .data-container {
-    padding-top: 20px; /* Adjust the value for desired vertical spacing */
+    padding-top: 0px; /* Adjust the value for desired vertical spacing */
+    
   }
 
-input[type="email"]  {
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.email-container {
-    padding-bottom: -30px; /* Adjust the value for desired vertical spacing */
+.periodo-container {
+    padding-bottom: 0px; /* Adjust the value for desired vertical spacing */
+    padding-top: 30px;
   }
 
+  .payday-container{
+    padding-top: 30px;
+    margin-left: -22px;
+  }
 
-/*password*/
-input[type="password"] {
+  input[type="payday"] {
     width: 30%;
     padding: 10px;
     margin: 10px 0;
@@ -88,7 +89,54 @@ input[type="password"] {
     
 }
 
-label[for="password"] {
+label[for="payday"] {
+    margin-left: -32px; /* Ajusta si es necesario después de aplicar el margen al contenedor */
+    margin-top: 10px;
+}
+
+  .cantidad-container{
+    padding-top: 30px;
+    margin-left: -30px;
+  }
+
+  .descripcion-container{
+    padding-top: 30px;
+    margin-left: -45px;
+  }
+
+
+
+input[type="periodo"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+input[type="cantidad"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+input[type="descripcion"] {
+    width: 30%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+label[for="periodo"] {
     margin-left: -32px; /* Adjust the value for desired spacing */
     margin-top: 10px;
     
@@ -120,7 +168,7 @@ label[for="name"] {
   } 
   
 
-.buttons a {
+  .buttons a {
     padding: 10px 20px;
     background-color: #ddd;
     border: none;
@@ -142,54 +190,21 @@ label[for="name"] {
     padding-top: 50px;
 }
 
-
-
-
-#fijo-button {
-    display: inline-block;
-    background-image: url('/assets/FijoButton.png');
-    width: 220px;
-    height: 30px;
-    background-size:cover;
-    text-indent: -9999px;
-    border: none;
-    cursor: pointer;
-    margin-right: -3px;
-    margin-bottom: 30px;
-    
-    background-position: top center; /* Set background-position to top center */
-  }
-
-
-#variable-button {
-    display: inline-block;
-    background-image: url('/assets/VariableButton.png');
-    width: 220px;
-    height: 30px;
-    background-size:cover;
-    text-indent: -9999px;
-    border: none;
-    cursor: pointer;
-    margin-right: -3px;
-    margin-bottom: 30px;
-    
-    background-position: top center; /* Set background-position to top center */
-  }
-
-
-#create-button {
-    display: inline-block;
-    background-image: url('/assets/AmbosButton.png');
-    width: 220px;
-    height: 30px;
-    background-size:cover;
-    text-indent: -9999px;
-    border: none;
-    cursor: pointer;
-    margin-right: -3px;
-    margin-bottom: 30px;
-    
-    background-position: top center; /* Set background-position to top center */
-  }
   
+#agregar-button {
+    display: inline-block;
+    background-image: url('/assets/agregar.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
   

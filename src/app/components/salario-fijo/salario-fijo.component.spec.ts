@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SalaryTypeComponent } from './salary-type.component';
+import { SalarioFijoComponent } from './salario-fijo.component';
 
-describe('SalaryTypeComponent', () => {
-  let component: SalaryTypeComponent;
-  let fixture: ComponentFixture<SalaryTypeComponent>;
+describe('SalarioFijoComponent', () => {
+  let component: SalarioFijoComponent;
+  let fixture: ComponentFixture<SalarioFijoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SalaryTypeComponent]
+      imports: [SalarioFijoComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SalaryTypeComponent);
+    fixture = TestBed.createComponent(SalarioFijoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

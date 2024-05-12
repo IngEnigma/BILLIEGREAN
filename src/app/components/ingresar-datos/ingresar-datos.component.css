@@ -1,0 +1,205 @@
+/* General Styles */
+body, html {
+    height: 100%; 
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+}
+
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.left {
+    text-align: center;
+    left: 0;
+    background-color: #F3FAF4; /* Color claro ajustable */
+    padding-top: 20px; /* Ajustado para reducir espacio superior */
+}
+
+.right {
+    text-align: center;
+    right: 0;
+    background-color: #C8EAD0; /* Color verde ajustable */
+    padding-top: 20px; /* Reducido para mover LOG IN hacia arriba */
+}
+
+.centered {
+    text-align: center;
+    position: absolute;
+    top: 10%; /* Ajuste este valor para mover hacia arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 50px;
+    padding-top: 60px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #22452C;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 450px; /* Eliminado el padding superior */
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #22452C;
+}
+
+h3 {
+    font-size: 30px;
+    padding-top: 10px; /* Eliminado el padding superior */
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #22452C;
+}
+
+
+.buttons-container {
+    display: flex;            /* Ajustar para flexbox */
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center;      /* Centra los elementos verticalmente */
+    flex-direction: column;   /* Alinear los botones en una columna */
+    gap: 20px;                /* Espacio entre los botones */
+    padding-top: 50px; 
+    
+  }  
+
+  .buttons a {
+    padding: 15px 30px;       /* Ajuste el padding para hacer el botón más grande */
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    display: block;           /* Cambio a block para manejar mejor el centrado */
+    width: 270px;             /* Nuevo ancho, aumentado en un 50% */
+    height: 22px;             /* Nueva altura, aumentada en un 50% */
+    line-height: 22px;        /* Ajustar line-height al tamaño del botón */
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    background-position: center; 
+}
+
+.buttons a:hover {
+    background-color: #ccc;
+}
+
+.centered-left img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    padding-top: 50px;
+}
+
+  
+#gastofi-button {
+    display: inline-block;
+    background-image: url('/assets/gastofi.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
+  #deuda-button {
+    display: inline-block;
+    background-image: url('/assets/deuda.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
+  #impuesto-button {
+    display: inline-block;
+    background-image: url('/assets/impuesto.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
+  #ahorro-button {
+    display: inline-block;
+    background-image: url('/assets/ahorro.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
+  #guardar-button {
+    display: inline-block;
+    background-image: url('/assets/guardar.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
+  #omitir-button {
+    display: inline-block;
+    background-image: url('/assets/omitir.PNG');
+    width: 180px;
+    height: 15px;
+    background-size: cover;
+    text-indent: -9999px;
+    border: none;
+    cursor: pointer;
+    margin-right: -40px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    background-position: top center; /* Set background-position to top center */
+    
+  }
+
+  
