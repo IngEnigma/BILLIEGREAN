@@ -1,0 +1,112 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {
+    color: #000000;
+    text-align: center;
+    padding-top: 100px;
+
+    
+    
+}
+
+/* Existing CSS from previous response */
+
+.profile-icon {
+    padding-top: 50px;
+    padding-right:  500px;
+    cursor: pointer;
+}
+
+.profile-icon img {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border-radius: 50%;
+}
+
+.profile-icon:hover {
+    opacity: 0.8;  /* Adjust opacity for a subtle hover effect */
+  }
+
+
+.navigation {
+    position: fixed; /* Position the menu at the top */
+    top: -25px;
+    left: 50px; /* Place it on the left */
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Full viewport height */
+    
+    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
+    transform: translateX(-100%); /* Initially hidden off-screen */
+    
+}
+
+.navigation:hover {
+    opacity: 0.8;  /* Adjust opacity for a subtle hover effect */
+  }
+
+.navigation.active {
+    transform: translateX(0); /* Show the menu when active */
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    cursor: pointer;
+}
+
+.hamburger-lines {
+    width: 55px;
+    height: 15px;
+    background-color: #318a4f;
+    margin-bottom: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-links li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.main {
+    padding: 20px;
+}
+
+.section {
+    background-color: cornflowerblue,
+}
