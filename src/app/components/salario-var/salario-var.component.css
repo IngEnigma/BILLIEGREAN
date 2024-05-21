@@ -75,41 +75,24 @@ h3 {
     padding-top: 30px;
   }
 
-  #periodo {
-    width: 150px; /* Adjust width as needed */
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .payday-container{
+    padding-top: 30px;
+    margin-left: -22px;
   }
 
-  .payday-container {
-    position: relative; /* Posicionar el icono de calendario */
-  }
-  
-  .payday-input {
+  input[type="payday"] {
     width: 30%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  .calendar-icon {
-    position: absolute; /* Posicionar el icono dentro del input */
-    top: 50%;
-    transform: translateY(-50%); /* Centrar verticalmente */
-    right: 10px; /* Ajustar margen derecho */
-    cursor: pointer; /* Indicar que se puede hacer clic */
-    /* Opcional: Agregar un icono de calendario usando una imagen o una fuente de iconos */
-  }
-  
-  .payday-container:hover .calendar-icon {
-    /* Cambiar el estilo del icono al pasar el cursor */
-    color: #007bff; /* Ejemplo de cambio de color */
-  }
+    
+}
 
-
-
+label[for="payday"] {
+    margin-left: -32px; /* Ajusta si es necesario después de aplicar el margen al contenedor */
+    margin-top: 10px;
+}
 
   .cantidad-container{
     padding-top: 30px;
