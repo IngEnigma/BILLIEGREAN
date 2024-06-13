@@ -51,7 +51,9 @@ h1 {
 
 h2 {
     font-size: 50px;
-    padding-top: 400px; /* Eliminado el padding superior */
+    padding-top: 550px; /* Eliminado el padding superior */
+    padding-bottom: 30px;
+    
 }
 
 h3 {
@@ -73,8 +75,10 @@ input[type="email"]  {
 }
 
 .email-container {
-    padding-bottom: -30px; /* Adjust the value for desired vertical spacing */
+    padding-bottom: 40px; /* Adjust the value for desired vertical spacing */
   }
+
+  
 
 input[type="password"] {
     width: 30%;
@@ -92,7 +96,7 @@ label[for="password"] {
   }
 
   .password-container {
-    padding-top: 40px; /* Adjust the value for desired vertical spacing */
+    padding-bottom: 40px; /* Adjust the value for desired vertical spacing */
   }
   
   
@@ -123,8 +127,8 @@ label[for="password"] {
 #login-button {
     display: inline-block;
     background-image: url('/assets/LogButton.png');
-    width: 180px;
-    height: 15px;
+    width: 150px;
+    height: 40px;
     background-size: cover;
     text-indent: -9999px;
     border: none;
@@ -132,6 +136,21 @@ label[for="password"] {
     margin-right: -40px;
     padding-bottom: 10px;
     background-position: top center; /* Set background-position to top center */
+  }
+  
+  .boton-crear {
+    color: #22452C; /* Color de la fuente blanco */
+    background-color: #C8EAD0; /* Elimina el fondo de color */
+    border: none; /* Elimina el borde del botón (opcional) */
+    padding: 10px 20px; /* Añade relleno al botón (opcional) */
+    text-decoration: none; /* Elimina la decoración del texto (opcional) */
+    cursor: pointer; /* Cambia el cursor a mano al pasar el mouse sobre el botón */
+    font-weight: bold; /* Poner en negrita */
+    width: 30px;
+    height: 20px;
+    padding-left: 168px;
+    position: relative;
+    top: -10px;
   }
   
   

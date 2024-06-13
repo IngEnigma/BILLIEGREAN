@@ -142,11 +142,12 @@ label[for="name"] {
     padding-top: 50px;
 }
 
+
 #create-button {
     display: inline-block;
-    background-image: url('/assets/CreateButton.png');
+    background-image: url('/assets/CreateButton.png');/*imagen cambiada*/
     width: 180px;
-    height: 15px;
+    height: 40px;
     background-size:cover;
     text-indent: -9999px;
     border: none;
@@ -155,6 +156,18 @@ label[for="name"] {
     margin-bottom: -50px;
     
     background-position: top center; /* Set background-position to top center */
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 20px 20px;
+    background-image: url('/assets/atras.png');
+    background-size:cover;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior del botón */
+    margin-left: 20px; /* Margen izquierdo del botón */
+    cursor: pointer; /* Indicador de cursor en forma de mano */
   }
   
   

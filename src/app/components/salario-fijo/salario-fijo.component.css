@@ -1,227 +1,218 @@
 /* General Styles */
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #000000;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 
-
 .split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
 }
 
 .left {
-    text-align: center;
-    left: 0;
-    background-color: #F3FAF4; /* Color claro ajustable */
-    padding-top: 20px; /* Ajustado para reducir espacio superior */
+  text-align: center;
+  left: 0;
+  background-color: #F3FAF4; /* Color claro ajustable */
+  padding-top: 20px; /* Ajustado para reducir espacio superior */
 }
 
 .right {
-    text-align: center;
-    right: 0;
-    background-color: #C8EAD0; /* Color verde ajustable */
-    padding-top: 20px; /* Reducido para mover LOG IN hacia arriba */
+  text-align: center;
+  right: 0;
+  background-color: #C8EAD0; /* Color verde ajustable */
+  padding-top: 20px; /* Reducido para mover LOG IN hacia arriba */
 }
 
 .centered {
-    text-align: center;
-    position: absolute;
-    top: 10%; /* Ajuste este valor para mover hacia arriba */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 10%; /* Ajuste este valor para mover hacia arriba */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
-
 h1 {
-    font-size: 50px;
-    padding-top: 60px;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #22452C;
+  font-size: 50px;
+  padding-top: 60px;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #22452C;
 }
 
 h2 {
-    font-size: 50px;
-    padding-top: 500px; /* Eliminado el padding superior */
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #22452C;
+  font-size: 50px;
+  padding-top: 500px; /* Eliminado el padding superior */
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #22452C;
 }
 
 h3 {
-    font-size: 50px;
-    padding-top: 10px; /* Eliminado el padding superior */
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #22452C;
+  font-size: 50px;
+  padding-top: 10px; /* Eliminado el padding superior */
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #22452C;
 }
-
 
 .data-container {
-    padding-top: 0px; /* Adjust the value for desired vertical spacing */
-    
-  }
+  padding-top: 0px; /* Ajuste del valor para el espaciado vertical deseado */
+  padding-bottom: 10px;
+}
 
 .periodo-container {
-    padding-bottom: 0px; /* Adjust the value for desired vertical spacing */
-    padding-top: 30px;
-  }
-
-  #periodo {
-    width: 150px; /* Adjust width as needed */
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-
-  .payday-container {
-    position: relative; /* Posicionar el icono de calendario */
-  }
-  
-  .payday-input {
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .calendar-icon {
-    position: absolute; /* Posicionar el icono dentro del input */
-    top: 50%;
-    transform: translateY(-50%); /* Centrar verticalmente */
-    right: 10px; /* Ajustar margen derecho */
-    cursor: pointer; /* Indicar que se puede hacer clic */
-    /* Opcional: Agregar un icono de calendario usando una imagen o una fuente de iconos */
-  }
-  
-  .payday-container:hover .calendar-icon {
-    /* Cambiar el estilo del icono al pasar el cursor */
-    color: #007bff; /* Ejemplo de cambio de color */
-  }
-
-
-
-
-  .cantidad-container{
-    padding-top: 30px;
-    margin-left: -30px;
-  }
-
-  .descripcion-container{
-    padding-top: 30px;
-    margin-left: -45px;
-  }
-
-
-
-input[type="periodo"] {
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+  padding-bottom: 20px; /* Ajuste del valor para el espaciado vertical deseado */
+  padding-top: 30px;
+  width: 700px;
+  height: 40px;
+  margin-left: 10px; /*+ a la derecha*/
 }
 
-
-
-input[type="cantidad"] {
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
+#periodo {
+  width: 230px; /* Ajuste del ancho según sea necesario */
+  height: 36px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-input[type="descripcion"] {
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
+.payday-container {
+  position: relative; /* Posicionar el icono de calendario */
+  width: 700px;
+  height: 40px;
+  margin-left: -20px;
 }
 
-label[for="periodo"] {
-    margin-left: -32px; /* Adjust the value for desired spacing */
-    margin-top: 10px;
-    
-  }
+.payday-input {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  .password-container {
-    padding-top: 20px; /* Adjust the value for desired vertical spacing */
-  }
+.calendar-icon {
+  position: absolute; /* Posicionar el icono dentro del input */
+  top: 50%;
+  transform: translateY(-50%); /* Centrar verticalmente */
+  right: 10px; /* Ajustar margen derecho */
+  cursor: pointer; /* Indicar que se puede hacer clic */
+  /* Opcional: Agregar un icono de calendario usando una imagen o una fuente de iconos */
+}
 
-  
-  /*name */
-  input[type="name"] {
-    width: 30%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    
+.payday-container:hover .calendar-icon {
+  /* Cambiar el estilo del icono al pasar el cursor */
+  color: #007bff; /* Ejemplo de cambio de color */
+}
+
+.cantidad-container {
+  padding-top: 30px;
+  margin-left: -20px;
+  width: 700px;
+  height: 40px;
+}
+
+input[type="number"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.descripcion-container {
+  padding-top: 30px;
+  margin-left: -4px;
+  width: 700px;
+}
+
+input[type="periodo"], input[type="cantidad"], input[type="descripcion"], input[type="number"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label[for="periodo"], label[for="cantidad"], label[for="descripcion"] {
+  margin-left: -32px; /* Ajuste del valor para el espaciado deseado */
+  margin-top: 10px;
+}
+
+.password-container {
+  padding-top: 20px; /* Ajuste del valor para el espaciado vertical deseado */
+}
+
+/* name */
+input[type="name"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 label[for="name"] {
-    margin-left: -3px; /* Adjust the value for desired spacing */
-    margin-top: 10px;
-    
-  }
+  margin-left: -3px; /* Ajuste del valor para el espaciado deseado */
+  margin-top: 10px;
+}
 
-  .name-container {
-    padding-top: 20px; /* Adjust the value for desired vertical spacing */
-  } 
-  
+.name-container {
+  padding-top: 20px; /* Ajuste del valor para el espaciado vertical deseado */
+}
 
-  .buttons a {
-    padding: 10px 20px;
-    background-color: #ddd;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    display: inline-block;
+.buttons a {
+  padding: 10px 20px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
 }
 
 .buttons a:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 .centered-left img {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%;
-    height: auto;
-    padding-top: 50px;
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+  padding-top: 50px;
 }
 
-  
 #agregar-button {
-    display: inline-block;
-    background-image: url('/assets/AgregarButton.png');
-    width: 180px;
-    height: 15px;
-    background-size: cover;
-    text-indent: -9999px;
-    border: none;
-    cursor: pointer;
-    margin-right: -40px;
-    padding-bottom: 15px;
-    padding-top: 10px;
-    background-position: top center; /* Set background-position to top center */
-    
-  }
+  display: inline-block;
+  background-image: url('/assets/AgregarButton.png');
+  width: 180px;
+  height: 15px;
+  background-size: cover;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  margin-right: -40px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  background-position: top center; /* Establecer la posición de fondo en el centro superior */
+}
 
-  
+.back-button {
+  display: inline-block;
+  padding: 20px 20px;
+  background-image: url('/assets/atras.png');
+  background-size: cover;
+  border: none;
+  border-radius: 20px; /* Bordes redondeados */
+  margin-top: 20px; /* Margen superior del botón */
+  margin-left: 20px; /* Margen izquierdo del botón */
+  cursor: pointer; /* Indicador de cursor en forma de mano */
+}

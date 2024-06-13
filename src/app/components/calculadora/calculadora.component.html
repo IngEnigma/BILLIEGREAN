@@ -1,16 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Billgrean</title>
     <link rel="stylesheet" href="calculadora.component.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  </head>
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
 
-
-  <nav class="navigation">
+<nav class="navigation">
     <div class="menu-toggle">
         <span class="hamburger-lines"></span>
         <span class="hamburger-lines"></span>
@@ -18,35 +19,55 @@
     </div>
 </nav>
 
-
 <div class="page-title-container">
-<h1 class="page-title">CALCULADORA</h1>
+    <h1 class="page-title">CALCULADORA</h1>
 </div>
-
 
 <div class="user-image-container">
     <img src="\assets\ProfilePic.png" alt="User Image" class="user-image">
 </div>
 
-
 <table>
     <tr>
-      <th>Monto a Simular</th>
-      <th>Plazo</th>
-      <th>Calcular</th>
+        <th><label for="monto">Monto a Simular</label></th>
+        <th><label for="plazo">Plazo</label></th>
+        <th><label for="interes">Tipo de Interés</label></th> <!-- Nueva etiqueta para el tipo de interés -->
+        <th>Calcular</th>
+        <th>Interés Calculado</th>
     </tr>
     <tr>
-      <td><input type="number" id="monto"></td>
-      <td>
-        <select id="plazo">
-          <option value="3">3 meses</option>
-          <option value="6">6 meses</option>
-          <option value="12">12 meses</option>
-          <option value="18">18 meses</option>
-          <option value="24">24 meses</option>
-        </select>
-      </td>
-      <td><button onclick="calcular()">Calcular</button></td>
+        <td><input type="number" id="monto" name="monto"></td>
+        <td>
+            <select id="plazo" name="plazo">
+                <option value="3">3 meses</option>
+                <option value="6">6 meses</option>
+                <option value="12">12 meses</option>
+                <option value="18">18 meses</option>
+                <option value="24">24 meses</option>
+            </select>
+        </td>
+        <td>
+            <select id="interes" name="interes">
+                <option value="0.05">5% de interés</option>
+                <option value="0.06">6% de interés</option>
+                <option value="0.07">7% de interés</option>
+                <!-- Añade más opciones de interés según necesites -->
+            </select>
+        </td>
+        <td><button onclick="calcularInteres()">Calcular</button></td>
+        <td id="interesCalculado"></td>
     </tr>
-  </table>
-  
+</table>
+
+<!-- Ventana emergente -->
+<div class="overlay" id="overlay">
+    <div class="popup" id="popup">
+        <h2>Resultado del cálculo</h2>
+        <div id="resultado"></div>
+        <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
+</div>
+
+<script src="calculadora.component.js"></script>
+</body>
+</html>

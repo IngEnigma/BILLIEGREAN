@@ -1,135 +1,141 @@
-/*Menú hamburguesa*/
-
+/* Menú hamburguesa */
 .navigation {
-    position: fixed; /* Position the menu at the top */
-    top: -25px;
-    left: 50px; /* Place it on the left */
-    width: 50px; /* Adjust width as needed */
-    height: 50px; /* Full viewport height */
-    
-    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
-    transform: translateX(-100%); /* Initially hidden off-screen */
-    
+  position: fixed;
+  top: 0; /* Ajustado para que el menú sea completamente visible */
+  left: 50px;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
 }
 
 .navigation.active {
-    transform: translateX(0); /* Show the menu when active */
+  transform: translateX(0);
 }
 
 .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Reducido para un diseño más compacto */
+  cursor: pointer;
 }
 
 .hamburger-lines {
-    width: 55px;
-    height: 15px;
-    background-color: #318a4f;
-    margin-bottom: 5px;
+  width: 55px;
+  height: 15px;
+  background-color: #318a4f;
+  margin-bottom: 5px;
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    padding: 15px;
-    text-align: center;
-}
-
-.nav-links li a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-}
-
-/* ... (existing CSS) */
-
+/* Título de la página */
 .page-title-container {
-    position: relative; /* Allow absolute positioning for the title */
-    top: 75px; /* Adjust to position below the header */
-    width: 100%;
-    text-align: center;
-  }
-  
-  .page-title {
-    font-size: 2.5em; /* Adjust font size as needed */
-    font-weight: bold;
-  }
-  
+  position: relative;
+  top: 20px; /* Ajusta la distancia desde la parte superior */
+  width: 100%;
+  text-align: center;
+  z-index: 1; /* Asegura que el título esté encima de otros elementos */
+}
 
+.page-title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
 
-
-
-/*user profile*/
+/* Imagen de usuario */
 .user-image-container {
-    position: fixed; /* Position the image container at the top */
-    top: 15px;
-    right: 110px; /* Place it on the right */
-    width: 80px; /* Adjust width as needed */
-    height: 100vh; /* Full viewport height */
-    background-color: #fff; /* Background color (optional) */
-    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
-    transform: translateX(100%); /* Initially hidden off-screen */
-    cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 110px;
+  width: 80px;
+  height: 80px; /* Ajustado para un tamaño más adecuado */
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+  cursor: pointer;
 }
 
 .user-image-container.active {
-    transform: translateX(0); /* Show the image container when active */
+  transform: translateX(0);
 }
 
 .user-image {
-    width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Create a circular image */
-    object-fit: cover; /* Ensure the image is fully visible */
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-/*tabla*/
+/* Tabla */
 table {
-    width: 80%; /* Ajusta el ancho según sea necesario */
-    border-collapse: collapse;
-    margin: 20px auto 50px; /* Añade margin-top: 50px */
-    padding-top: 400px;
-  }
-  
-  
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 20px;
-    text-align: left;
-    border-radius: 5px; /* Añade esquinas redondeadas */
-  }
-  
-  
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-  
-  input[type="number"] {
-    width: 150px; /* Ajusta el ancho según sea necesario */
-    padding: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  
-  button :hover {
-    padding: 8px 20px; /* Ajusta el relleno según sea necesario */
-    background-color: #2a7643; /* Un tono más oscuro al pasar el cursor */
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px; /* Añade esquinas redondeadas */
-  }
+  width: 80%;
+  margin: 30px auto;
+  margin-top: 150px; /* Ajusta el margen superior para separar la tabla del título */
+  border-collapse: collapse;
+}
 
-  
-  
-  
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+button:hover {
+  padding: 8px 20px;
+  background-color: #2a7643;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Estilos para la ventana emergente */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  z-index: 2; /* Capa por encima de todo */
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #2a7643;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

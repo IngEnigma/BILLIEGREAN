@@ -67,7 +67,7 @@ h3 {
 
 .data-container {
     padding-top: 0px; /* Adjust the value for desired vertical spacing */
-    
+
   }
 
 .periodo-container {
@@ -86,7 +86,7 @@ h3 {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+
 }
 
 label[for="payday"] {
@@ -94,10 +94,20 @@ label[for="payday"] {
     margin-top: 10px;
 }
 
-  .cantidad-container{
-    padding-top: 30px;
-    margin-left: -30px;
-  }
+.cantidad-container {
+  padding-top: 30px;
+  margin-left: -57px;
+  width: 700px;
+  height: 40px;
+}
+
+input[type="number"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
   .descripcion-container{
     padding-top: 30px;
@@ -124,7 +134,7 @@ input[type="cantidad"] {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+
 }
 
 input[type="descripcion"] {
@@ -133,20 +143,20 @@ input[type="descripcion"] {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+
 }
 
 label[for="periodo"] {
     margin-left: -32px; /* Adjust the value for desired spacing */
     margin-top: 10px;
-    
+
   }
 
   .password-container {
     padding-top: 20px; /* Adjust the value for desired vertical spacing */
   }
 
-  
+
   /*name */
   input[type="name"] {
     width: 30%;
@@ -154,19 +164,19 @@ label[for="periodo"] {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+
 }
 
 label[for="name"] {
     margin-left: -3px; /* Adjust the value for desired spacing */
     margin-top: 10px;
-    
+
   }
 
   .name-container {
     padding-top: 20px; /* Adjust the value for desired vertical spacing */
-  } 
-  
+  }
+
 
   .buttons a {
     padding: 10px 20px;
@@ -190,7 +200,7 @@ label[for="name"] {
     padding-top: 50px;
 }
 
-  
+
 #agregar-button {
     display: inline-block;
     background-image: url('/assets/AgregarButton.png');
@@ -204,7 +214,17 @@ label[for="name"] {
     padding-bottom: 15px;
     padding-top: 10px;
     background-position: top center; /* Set background-position to top center */
-    
+
   }
 
-  
+  .back-button {
+    display: inline-block;
+    padding: 20px 20px;
+    background-image: url('/assets/atras.png');
+    background-size:cover;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    margin-top: 20px; /* Margen superior del botón */
+    margin-left: 20px; /* Margen izquierdo del botón */
+    cursor: pointer; /* Indicador de cursor en forma de mano */
+  }

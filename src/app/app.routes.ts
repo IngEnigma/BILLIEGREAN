@@ -7,6 +7,8 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { NewPasswordComponent } from './components/new-password/new-password.component';
 import { ListaGastosComponent } from './components/lista-gastos/lista-gastos.component';
 import { CalculadoraComponent } from './components/calculadora/calculadora.component';
+import { SalarioFijoComponent } from './components/salario-fijo/salario-fijo.component';
+import { SalarioVarComponent } from './components/salario-var/salario-var.component';
 
 export const routes: Routes = [
 
@@ -18,5 +20,7 @@ export const routes: Routes = [
     {path: 'new-password', component: NewPasswordComponent},
     {path: 'lista-gastos', component: ListaGastosComponent},
     {path: 'calculadora', component: CalculadoraComponent},
+    {path: 'salario-fijo', component: SalarioFijoComponent},
+    {path: 'salario-var', component: SalarioVarComponent},
 ];
 

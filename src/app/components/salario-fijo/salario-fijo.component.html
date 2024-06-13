@@ -10,18 +10,23 @@
   <body>
     <div class="split left">
         <div class="centered-left">
-            
+
+
+          <div class="back-button">
+            <a routerLink="/salary-type"  href="">  .....</a>
+          </div>
+
             <h1 id="titulo">SALARIO FIJO</h1>
             <img src="assets\Logo.png" alt="Company logo or image">
         </div>
     </div>
-  
+
     <div class="split right">
         <div class="centered">
             <h2 id="log-in">INGRESE LOS</h2>
             <h3 id="log-in">DATOS</h3>
             <section class="login">
-  
+
                 <div class="data-container">
 
                   <div class="periodo-container">
@@ -33,26 +38,41 @@
                       <option value="anual">Anual</option>
                     </select>
                   </div>
-                  
-                
+
+
                   <div class="payday-container">
                     <label for="payday">Día de pago:</label>
                     <input type="date" id="payday" name="payday" class="payday-input" required>
                     <span class="calendar-icon"></span> </div>
-                  
-                  
-                <div class="cantidad-container">             
-                    <label for="cantidad">Cantidad (MXN):</label>
-                    <input type="cantidad" id="cantidad" name="cantidad" required>
+
+
+                    <div class="cantidad-container">
+                      <label for="cantidad">Cantidad (MXN):</label>
+                      <input type="number" id="cantidad" name="cantidad" required min="0" step="0.01">
                   </div>
 
-                <div class="descripcion-container">             
+                  <script>
+                  document.getElementById('cantidad').addEventListener('input', function (event) {
+                      const input = event.target;
+                      const value = input.value;
+
+                      // Validar que el valor sea un número
+                      if (isNaN(value)) {
+                          input.setCustomValidity('Por favor, ingrese un número válido.');
+                      } else {
+                          input.setCustomValidity('');
+                      }
+                  });
+                  </script>
+
+
+                <div class="descripcion-container">
                     <label for="descripcion">Descripción:</label>
                     <input type="descripcion" id="descripcion" name="descripcion" required>
                   </div>
 
               </div>
-              
+
                <div class="boton">
                 <a routerLink="/home" id="agregar-button" alt="agregar button"></a>
                </div>
