@@ -1,112 +1,97 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-
-
-.header {
-    color: #000000;
-    text-align: center;
-    padding-top: 100px;
-
-    
-    
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Existing CSS from previous response */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
 
 .profile-icon {
-    padding-top: 50px;
-    padding-right:  500px;
-    cursor: pointer;
+  position: relative;
 }
 
 .profile-icon img {
-    width: 40px; /* Adjust as needed */
-    height: 40px; /* Adjust as needed */
-    border-radius: 50%;
-}
-
-.profile-icon:hover {
-    opacity: 0.8;  /* Adjust opacity for a subtle hover effect */
-  }
-
-
-.navigation {
-    position: fixed; /* Position the menu at the top */
-    top: -25px;
-    left: 50px; /* Place it on the left */
-    width: 50px; /* Adjust width as needed */
-    height: 50px; /* Full viewport height */
-    
-    transition: transform 0.3s ease; /* Smooth transition for opening/closing */
-    transform: translateX(-100%); /* Initially hidden off-screen */
-    
-}
-
-.navigation:hover {
-    opacity: 0.8;  /* Adjust opacity for a subtle hover effect */
-  }
-
-.navigation.active {
-    transform: translateX(0); /* Show the menu when active */
-}
-
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    cursor: pointer;
-}
-
-.hamburger-lines {
-    width: 55px;
-    height: 15px;
-    background-color: #318a4f;
-    margin-bottom: 5px;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    padding: 15px;
-    text-align: center;
-}
-
-.nav-links li a {
-    display: block;
-    text-decoration: none;
-    color: #333;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav li {
-    list-style: none;
+
+
+.nav-links li {
+  margin-right: 20px;
 }
 
-.nav a {
-    text-decoration: none;
-    color: #2980b9;
-    font-weight: bold;
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los elementos */
 }
 
-.main {
-    padding: 20px;
+.nav-links a {
+  display: inline-block;
+  width: 140px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center; /* Centra la imagen dentro del botón */
+
+  border: none;
+  cursor: pointer;
+  margin-right: 20px; /* Espacio entre botones */
 }
 
-.section {
-    background-color: cornflowerblue,
+
+
+#listab-button {
+  width: 140px;
+  height: 38px;
+  /*background-image: url('/assets/lista.png'); /* Color de fondo para el botón Lista */
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  /*text-indent: -9999px;*/
+  background-color: rgb(150, 221, 186);
 }
+
+#grafb-button {
+  width: 140px;
+  height: 38px;
+  /*background-image: url('/assets/graficos.png'); /* Imagen de fondo para el botón Gráficos */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  /*text-indent: -9999px;*/
+  background-color: rgb(150, 221, 186);
+
+}
+
